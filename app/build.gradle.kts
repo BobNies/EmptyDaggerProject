@@ -12,11 +12,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.rpm.emptydaggerproject"
+    namespace = "com.emptydaggerproject"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.rpm.emptydaggerproject"
+        applicationId = "com.emptydaggerproject"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

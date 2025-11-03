@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 EmptyDaggerProject is an Android application template configured with Hilt dependency injection (despite the "Dagger" name in the project title). The project uses Jetpack Compose for UI, Room for local database, Retrofit/OkHttp for networking, and WorkManager for background tasks.
 
-**Package name**: `com.rpm.emptydaggerproject`
+**Package name**: `com.emptydaggerproject`
 
 ## Build Commands
 
@@ -28,13 +28,13 @@ EmptyDaggerProject is an Android application template configured with Hilt depen
 ./gradlew test
 
 # Run specific unit test
-./gradlew test --tests com.rpm.emptydaggerproject.ExampleUnitTest
+./gradlew test --tests com.emptydaggerproject.ExampleUnitTest
 
 # Run instrumented tests (requires emulator/device)
 ./gradlew connectedAndroidTest
 
 # Run specific instrumented test
-./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.rpm.emptydaggerproject.ExampleInstrumentedTest
+./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.emptydaggerproject.ExampleInstrumentedTest
 
 # Install on connected device
 ./gradlew installDebug
@@ -69,7 +69,7 @@ Dependencies are managed via Gradle version catalog in `gradle/libs.versions.tom
 
 ## Project Structure
 
-- `app/src/main/java/com/rpm/emptydaggerproject/` - Main source code
+- `app/src/main/java/com/emptydaggerproject/` - Main source code
   - `ui/theme/` - Compose theme definitions (Color, Type, Theme)
   - `MainActivity.kt` - Entry point activity
 - `app/src/test/` - Unit tests (JVM)

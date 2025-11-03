@@ -3,7 +3,11 @@
     "allow": [
       "Bash(if exist \"CLAUDE.md\" echo \"exists\" else echo \"not found\")",
       "Bash(if exist \".cursor\" dir \".cursor\" /b else echo \"not found\")",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
