@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(if exist \"CLAUDE.md\" echo \"exists\" else echo \"not found\")",
+      "Bash(if exist \".cursor\" dir \".cursor\" /b else echo \"not found\")",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
