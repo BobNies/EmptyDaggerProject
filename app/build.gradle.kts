@@ -44,7 +44,15 @@ android {
     }
 }
 
+hilt {
+    enableAggregatingTask = false
+}
+
 dependencies {
+    // Resolve version conflicts - explicit dependencies override transitive ones
+    implementation("com.squareup:javapoet:1.13.0")
+    implementation("org.jetbrains:annotations:23.0.0")
+
     // defaults
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -58,6 +66,7 @@ dependencies {
     // ** added dependencies **
     // core
     implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.service)
     implementation(libs.androidx.datastore)
     implementation(libs.androidx.work)
@@ -74,7 +83,6 @@ dependencies {
     implementation(libs.okhttp.logging)
     // room
     ksp(libs.room.compiler)
-    implementation(libs.room.compiler)
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     // Firebase
