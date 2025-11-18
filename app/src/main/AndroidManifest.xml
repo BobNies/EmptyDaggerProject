@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmptyDaggerProject">
         <activity
-            android:name=".MainActivity"
+            android:name="com.rpm.emptydaggerproject.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.EmptyDaggerProject">
             <intent-filter>
